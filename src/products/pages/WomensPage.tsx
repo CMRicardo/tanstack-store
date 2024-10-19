@@ -5,7 +5,7 @@ export const WomensPage = () => {
   return (
     <div className="flex-col">
       <h1 className="text-2xl font-bold">Productos para mujeres</h1>
-
+      {productsQuery.isLoading && <p>Cargando productos...</p>}
       <ProductList products={productsQuery.products} />
     </div>
   );
